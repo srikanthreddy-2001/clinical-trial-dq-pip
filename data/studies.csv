@@ -1,0 +1,7 @@
+study_id,study_name,therapeutic_area,Phase,Sponsor,start_date,planned_end_date,target_enrollment,study_status
+STUDY-001,Oncology Trial 1,Oncology,Phase III,Pfizer,2023-11-04,2024-11-15,112,Active
+STUDY-002,Cardiology Trial 2,Cardiology,Phase I,Novartis,2023-04-05,2024-05-26,201,Completed
+STUDY-003,Neurology Trial 3,Neurology,Phase I,Roche,2023-07-02,2024-07-16,105,Planning
+STUDY-004,Immunology Trial 4,Immunology,Phase I,Merck,2023-04-17,2025-02-18,193,Active
+STUDY-005,Psychiatry Trial 5,Psychiatry,Phase IV,AstraZeneca,2023-04-23,2025-03-20,106,Completed
+STUDY-006,Endocrinology Trial 6,Endocrinology,Phase I,Eli Lilly,2023-08-19,2025-01-07,244,Active

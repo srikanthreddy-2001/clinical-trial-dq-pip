@@ -1,0 +1,27 @@
+site_id,study_id,site_name,Country,City,principal_investigator,activation_date,site_target_enrollment,site_status
+SITE-001,STUDY-001,Boston Cancer Institute,USA,Boston,Dr. Smith,2023-03-23,31,Active
+SITE-002,STUDY-002,New York University Hospital,USA,New York,Dr. Johnson,2023-03-07,16,Active
+SITE-003,STUDY-003,Chicago University Hospital,USA,Chicago,Dr. Lee,2023-07-04,32,Closed
+SITE-004,STUDY-004,Houston General Hospital,USA,Houston,Dr. Patel,2023-05-26,39,Closed
+SITE-005,STUDY-005,London General Hospital,UK,London,Dr. Garcia,2023-02-13,45,Active
+SITE-006,STUDY-006,Manchester University Hospital,UK,Manchester,Dr. Chen,2023-11-20,46,Active
+SITE-007,STUDY-001,Berlin General Hospital,Germany,Berlin,Dr. Brown,2023-12-03,24,Active
+SITE-008,STUDY-002,Munich Medical Center,Germany,Munich,Dr. Kim,2023-02-28,16,Pending
+SITE-009,STUDY-003,Paris University Hospital,France,Paris,Dr. Williams,2023-05-15,20,Active
+SITE-010,STUDY-004,Lyon University Hospital,France,Lyon,Dr. Davis,2023-06-07,14,Closed
+SITE-011,STUDY-005,Toronto Clinic,Canada,Toronto,Dr. Martinez,2023-11-06,25,Active
+SITE-012,STUDY-006,Vancouver University Hospital,Canada,Vancouver,Dr. Wilson,2023-08-13,50,Closed
+SITE-013,STUDY-001,Sydney University Hospital,Australia,Sydney,Dr. Anderson,2023-04-22,13,Active
+SITE-014,STUDY-002,Melbourne University Hospital,Australia,Melbourne,Dr. Taylor,2023-01-26,35,Active
+SITE-015,STUDY-003,Tokyo Clinic,Japan,Tokyo,Dr. Thomas,2023-02-07,30,Active
+SITE-016,STUDY-004,Osaka Cancer Institute,Japan,Osaka,Dr. Moore,2023-11-16,39,Active
+SITE-017,STUDY-005,Mumbai Medical Center,India,Mumbai,Dr. Jackson,2023-05-05,45,Closed
+SITE-018,STUDY-006,Bangalore Clinic,India,Bangalore,Dr. Martin,2023-05-24,37,Closed
+SITE-019,STUDY-001,Sao Paulo Medical Center,Brazil,Sao Paulo,Dr. Thompson,2023-07-12,18,Closed
+SITE-020,STUDY-002,Rio de Janeiro General Hospital,Brazil,Rio de Janeiro,Dr. White,2023-08-03,17,Active
+SITE-021,STUDY-003,Madrid Cancer Institute,Spain,Madrid,Dr. Harris,2023-11-06,48,Active
+SITE-022,STUDY-004,Barcelona Clinic,Spain,Barcelona,Dr. Clark,2023-07-13,39,Closed
+SITE-023,STUDY-005,Rome General Hospital,Italy,Rome,Dr. Lewis,2023-05-18,17,Closed
+SITE-024,STUDY-006,Milan University Hospital,Italy,Milan,Dr. Walker,2023-05-25,17,Active
+SITE-025,STUDY-001,Amsterdam Cancer Institute,Netherlands,Amsterdam,Dr. Hall,2023-07-06,10,Active
+SITE-026,STUDY-002,Rotterdam Medical Center,Netherlands,Rotterdam,Dr. Young,2023-09-25,42,Active
