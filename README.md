@@ -13,6 +13,7 @@ clinical-trial-dq-pip/
 ├── src/              # transforms.py, dq_checks.py (pure PySpark functions)
 ├── tests/            # test_transforms.py, test_dq_checks.py (+ conftest.py)
 ├── data/             # synthetic CSVs (studies, sites, subjects, visits)
+├── RUNBOOK.md        # operational guide: run E2E, rerun safety, DQ gate, troubleshooting
 ├── .github/workflows/tests.yml   # GitHub Actions: pytest on every push
 ├── requirements.txt
 └── README.md
@@ -72,6 +73,12 @@ tampered-KPI detection, duplicate/blank-site/orphan DQ failures).
 
 `.github/workflows/tests.yml` runs the whole pytest suite on every push
 (and pull request) on ubuntu-latest with Java 17 + Python 3.11.
+
+## Operations
+
+See **[RUNBOOK.md](RUNBOOK.md)** for how to run the pipeline end-to-end,
+rerun-safety guarantees, expected row counts, the DQ gate, quarantine
+tables, and troubleshooting.
 
 ## Data
 
