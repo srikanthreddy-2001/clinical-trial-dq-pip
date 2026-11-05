@@ -48,7 +48,30 @@ BUSINESS_COLUMNS = {
 # ---------------------------------------------------------------------------
 
 def read_csv_all_strings(spark, path, business_cols):
-    """Read a landing CSV as-is: every business column typed STRING (raw bronze)."""
+    """Read a landing CSV as-is: every business column typed STRING (raw bronze).
+
+    DEF-01 fix (Nov 5, 2026, found by pipeline-level negative testing): validate
+    the file header FIRST. With an explicit Spark schema the CSV reader maps
+    columns POSITIONALLY and ignores header names, so a file that is missing a
+    mandatory column (or has the columns reordered) was previously ingested
+    silently misaligned and only failed later in Silver with a confusing
+    date-parse error. Now the read is rejected up front with a ValueError that
+    names the file and exactly what is wrong with the header.
+    """
+    expected = list(business_cols)
+    # plain-Python header read: portable across local/CI (plain paths), the
+    # Databricks workspace (/Workspace FUSE) and UC volumes (/Volumes FUSE).
+    with open(path, encoding="utf-8-sig") as fh:
+        actual = fh.readline().rstrip("\r\n").split(",")
+    if actual != expected:
+        missing = [c for c in expected if c not in actual]
+        extra = [c for c in actual if c not in expected]
+        raise ValueError(
+            f"Input file {path} rejected: header does not match the expected business "
+            f"columns. missing={missing} unexpected={extra} found={actual} "
+            f"expected={expected}. Spark maps CSV columns positionally, so a "
+            f"missing/reordered column would silently corrupt the bronze layer."
+        )
     schema = StructType([StructField(c, StringType(), True) for c in business_cols])
     return (
         spark.read.schema(schema)
